@@ -1,0 +1,10 @@
+{
+	"Description": "This mod adds some of the core units of each faction as mercenaries to the campaign map. With this mod, you can recruit hastati mercenaries from italy, chariots from egypt, head hurlers from britain, and many more.",
+	"Mod Name": "Spoorey's auxilia-like mercenaries",
+	"Supports Alex": false,
+	"Supports BI": false,
+	"Supports Rome": true,
+	"Tags": ["units" ],
+	"Visibility": 0,
+	"Workshop ID": 0
+}
