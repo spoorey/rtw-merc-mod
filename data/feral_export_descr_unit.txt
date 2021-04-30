@@ -551,7 +551,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 960, 200, 100, 150, 960
-ownership        gauls
+ownership        gauls, slave
 ethnicity gauls, Central_Gaul
  
  
@@ -578,7 +578,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 400, 130, 40, 60, 400
-ownership        britons
+ownership        britons, slave
 ethnicity britons, Brittania_Superior, don't_allow_mixed, don't_allow_regional, don't_allow_custom
 tattoo_color blue
 hair_color light_blond
@@ -862,7 +862,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 500, 170, 50, 80, 500
-ownership        dacia
+ownership        dacia, slave
 ethnicity dacia, Dacia
  
  
@@ -1002,7 +1002,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 680, 210, 70, 110, 680
-ownership        gauls
+ownership        gauls, slave
 ethnicity gauls, Central_Gaul
  
  
@@ -1090,7 +1090,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 430, 130, 50, 70, 430
-ownership        gauls
+ownership        gauls, slave
 ethnicity gauls, Central_Gaul, don't_allow_mixed, don't_allow_regional, don't_allow_custom
 tattoo_color black
 hair_color white
@@ -1291,7 +1291,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 540, 130, 60, 90, 540
-ownership        germans
+ownership        germans, slave
 ethnicity germans, Germania_Superior, don't_allow_mixed, don't_allow_regional, don't_allow_custom
 tattoo_color black
  
@@ -1319,7 +1319,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 930, 120, 100, 140, 930
-ownership        germans
+ownership        germans, slave
 ethnicity germans, Berserk, don't_allow_mixed, don't_allow_regional, don't_allow_custom
  
  
@@ -1806,7 +1806,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 620, 180, 50, 80, 620
-ownership        britons
+ownership        britons, slave
 ethnicity britons, Brittania_Superior
  
  
@@ -1982,7 +1982,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 600, 140, 60, 90, 600
-ownership        scythia
+ownership        scythia, slave
 ethnicity scythia, Scythia
 is_female
  
@@ -2041,7 +2041,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 660, 130, 70, 100, 660
-ownership        scythia
+ownership        scythia, slave
 ethnicity scythia, Scythia, don't_allow_mixed, don't_allow_regional, don't_allow_custom
 tattoo_color black
 is_female
@@ -2642,7 +2642,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 540, 210, 60, 90, 540
-ownership        carthage
+ownership        carthage, slave
 ethnicity carthage, Africa, don't_allow_regional
  
  
@@ -2781,7 +2781,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 390, 200, 40, 60, 390
-ownership        numidia
+ownership        numidia, slave
 ethnicity numidia, Numidia
  
  
@@ -3019,7 +3019,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 520, 140, 60, 80, 520
-ownership        numidia
+ownership        numidia, slave
 ethnicity numidia, Numidia
  
  
@@ -3562,7 +3562,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 940, 190, 100, 150, 940
-ownership        parthia, armenia, seleucid
+ownership        parthia, armenia, seleucid, slave
 ethnicity armenia, Armenia
 ethnicity parthia, Elymais
 ethnicity seleucid, Syria
@@ -3622,7 +3622,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 790, 140, 80, 120, 790
-ownership        parthia
+ownership        parthia, slave
 ethnicity parthia, Elymais, don't_allow_regional
  
  
@@ -3651,7 +3651,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 1230, 190, 130, 190, 1230
-ownership        armenia
+ownership        armenia, slave
 ethnicity armenia, Armenia
  
  
@@ -3710,7 +3710,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 940, 140, 100, 150, 940
-ownership        parthia
+ownership        parthia, slave
 ethnicity parthia, Elymais
  
  
@@ -4679,7 +4679,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 1190, 460, 120, 180, 1190
-ownership        greek_cities
+ownership        greek_cities, slave
 ethnicity greek_cities, Laconia, don't_allow_regional
  
  
@@ -4706,7 +4706,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 310, 150, 40, 50, 310
-ownership        macedon, seleucid
+ownership        macedon, seleucid, slave
 ethnicity macedon, Macedonia
 ethnicity seleucid, Syria
  
@@ -4734,7 +4734,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 580, 250, 60, 90, 580
-ownership        macedon, seleucid, thrace
+ownership        macedon, seleucid, thrace, slave
 ethnicity macedon, Macedonia
 ethnicity seleucid, Syria
 ethnicity thrace, Thrace
@@ -5561,7 +5561,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 440, 170, 50, 70, 440
-ownership        roman
+ownership        roman, slave
 ethnicity romans_brutii, Bruttium
 ethnicity romans_julii, Etruria
 ethnicity romans_scipii, Campania
@@ -5592,7 +5592,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 490, 170, 50, 80, 490
-ownership        romans_julii,romans_brutii,romans_scipii,romans_senate
+ownership        romans_julii,romans_brutii,romans_scipii,romans_senate, slave
 ethnicity romans_brutii, Bruttium
 ethnicity romans_julii, Etruria
 ethnicity romans_scipii, Campania
@@ -5812,7 +5812,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 810, 320, 90, 130, 810
-ownership        romans_julii,romans_brutii,romans_scipii,romans_senate
+ownership        romans_julii,romans_brutii,romans_scipii,romans_senate, slave
 ethnicity romans_brutii, Bruttium
 ethnicity romans_julii, Etruria
 ethnicity romans_scipii, Campania

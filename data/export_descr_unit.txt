@@ -527,7 +527,7 @@ class            missile
 voice_type       Light_1
 voice_indexes    0 1 2
 soldier          warband_huntsman, 40, 0, 1.2
-attributes       sea_faring, hide_improved_forest, hide_long_grass, hide_anywhere, very_hardy
+attributes       sea_faring, hide_improved_forest, hide_long_grass, hide_anywhere, very_hardy, mercenary_unit
 formation        1.2, 1.2, 2.4, 2.4, 3, square
 stat_health      1, 0
 stat_pri         11, 4, arrow, 170, 30, missile, archery, piercing, none, 25 ,1
@@ -543,7 +543,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 960, 200, 100, 150, 960
-ownership        gauls
+ownership        gauls, slave
 ethnicity gauls, Central_Gaul
  
  
@@ -554,7 +554,7 @@ class            missile
 voice_type       Heavy_1
 voice_indexes    0 1 2
 soldier          warband_hurler, 40, 0, 1.2
-attributes       sea_faring, hide_improved_forest, warcry
+attributes       sea_faring, hide_improved_forest, warcry, mercenary_unit
 formation        1.6, 2, 3.2, 4, 3, square
 stat_health      1, 0
 stat_pri         17, 5, head, 40, 6, thrown, archery, fire, none, 25 ,1
@@ -570,7 +570,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 400, 130, 40, 60, 400
-ownership        britons
+ownership        britons, slave
 ethnicity britons, Brittania_Superior, don't_allow_mixed, don't_allow_regional, don't_allow_custom
 tattoo_color blue
 hair_color light_blond
@@ -838,7 +838,7 @@ voice_type       Heavy_1
 voice_indexes    0 1 2
 soldier          warband_falx, 40, 0, 1.5
 officer          barb_standard
-attributes       sea_faring, hide_improved_forest, warcry
+attributes       sea_faring, hide_improved_forest, warcry, mercenary_unit
 formation        1.2, 1.2, 2.4, 2.4, 4, square
 stat_health      1, 0
 stat_pri         13, 5, no, 0, 0, melee, blade, slashing, axe, 25 ,0.87
@@ -854,7 +854,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 500, 170, 50, 80, 500
-ownership        dacia
+ownership        dacia, slave
 ethnicity dacia, Dacia
  
  
@@ -978,7 +978,7 @@ voice_type       Heavy_1
 voice_indexes    0 1 2
 soldier          barb_warguard, 40, 0, 1.5
 officer          barb_standard
-attributes       sea_faring, hide_improved_forest, hardy, warcry
+attributes       sea_faring, hide_improved_forest, hardy, warcry, mercenary_unit
 formation        1.2, 1.2, 2.4, 2.4, 3, square
 stat_health      1, 0
 stat_pri         13, 4, no, 0, 0, melee, simple, piercing, sword, 25 ,1
@@ -994,7 +994,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 680, 210, 70, 110, 680
-ownership        gauls
+ownership        gauls, slave
 ethnicity gauls, Central_Gaul
  
  
@@ -1066,7 +1066,7 @@ class            heavy
 voice_type       Light_1
 voice_indexes    0 1 2
 soldier          barb_naked_fanatic, 40, 0, 1.5
-attributes       sea_faring, hide_improved_forest, hardy, warcry
+attributes       sea_faring, hide_improved_forest, hardy, warcry, mercenary_unit
 formation        1.2, 1.2, 2.4, 2.4, 4, square
 stat_health      1, 0
 stat_pri         13, 5, no, 0, 0, melee, simple, piercing, sword, 25 ,1
@@ -1082,7 +1082,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 430, 130, 50, 70, 430
-ownership        gauls
+ownership        gauls, slave
 ethnicity gauls, Central_Gaul, don't_allow_mixed, don't_allow_regional, don't_allow_custom
 tattoo_color black
 hair_color white
@@ -1267,7 +1267,7 @@ class            heavy
 voice_type       Medium_1
 voice_indexes    0 1 2
 soldier          barb_night_raider, 40, 0, 1.2
-attributes       sea_faring, hide_forest, frighten_foot, hardy, warcry
+attributes       sea_faring, hide_forest, frighten_foot, hardy, warcry, mercenary_unit
 formation        1.2, 1.2, 2.4, 2.4, 4, square
 stat_health      1, 0
 stat_pri         14, 6, no, 0, 0, melee, blade, piercing, axe, 25 ,1
@@ -1283,7 +1283,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 540, 130, 60, 90, 540
-ownership        germans
+ownership        germans, slave
 ethnicity germans, Germania_Superior, don't_allow_mixed, don't_allow_regional, don't_allow_custom
 tattoo_color black
  
@@ -1295,7 +1295,7 @@ class            light
 voice_type       Heavy_1
 voice_indexes    0 1 2
 soldier          barb_berserker, 12, 0, 1.5
-attributes       sea_faring, hide_forest, frighten_foot, very_hardy, warcry
+attributes       sea_faring, hide_forest, frighten_foot, very_hardy, warcry, mercenary_unit
 formation        1.2, 1.2, 2.4, 2.4, 2, horde
 stat_health      2, 0
 stat_pri         19, 7, no, 0, 0, melee, blade, slashing, axe, 25 ,0.87
@@ -1311,7 +1311,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 930, 120, 100, 140, 930
-ownership        germans
+ownership        germans, slave
 ethnicity germans, Berserk, don't_allow_mixed, don't_allow_regional, don't_allow_custom
  
  
@@ -1782,7 +1782,7 @@ voice_indexes    0 1 2
 soldier          barb_chariot_archer, 18, 9, 1
 mount            barbarian heavy chariot
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, hide_forest,  frighten_foot, cantabrian_circle
+attributes       sea_faring, hide_forest,  frighten_foot, cantabrian_circle, mercenary_unit
 formation        8.5, 9, 15, 15, 2, square
 stat_health      1, 2
 stat_pri         10, 4, arrow, 120, 60, missile, archery, piercing, none, 25 ,1
@@ -1798,7 +1798,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 500, 170, 50, 80, 500
-ownership        britons
+ownership        britons, slave
 ethnicity britons, Brittania_Superior
  
  
@@ -1958,7 +1958,7 @@ voice_type       Female_1
 soldier          barb_headhunting_maiden, 27, 0, 1
 mount            light horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, hide_forest
+attributes       sea_faring, hide_forest, mercenary_unit
 formation        3, 4, 6, 6, 4, square, wedge
 stat_health      1, 0
 stat_pri         9, 8, no, 0, 0, melee, simple, blunt, mace, 25 ,1
@@ -1974,7 +1974,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 600, 140, 60, 90, 600
-ownership        scythia
+ownership        scythia, slave
 ethnicity scythia, Scythia
 is_female
  
@@ -2017,7 +2017,7 @@ voice_type       Female_1
 soldier          barb_scythian_noblewoman, 18, 0, 1
 mount            light horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, hide_forest, cantabrian_circle
+attributes       sea_faring, hide_forest, cantabrian_circle, mercenary_unit
 formation        3, 4, 6, 6, 4, square
 stat_health      1, 0
 stat_pri         8, 4, arrow, 170, 30, missile, archery, piercing, none, 25 ,1
@@ -2033,7 +2033,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 660, 130, 70, 100, 660
-ownership        scythia
+ownership        scythia, slave
 ethnicity scythia, Scythia, don't_allow_mixed, don't_allow_regional, don't_allow_custom
 tattoo_color black
 is_female
@@ -2618,7 +2618,7 @@ voice_type       Heavy_1
 voice_indexes    0 1 2
 soldier          carthaginian_heavy_infantry, 40, 0, 1.3
 officer          carthaginian_standard
-attributes       sea_faring, hide_forest, can_sap, hardy
+attributes       sea_faring, hide_forest, can_sap, hardy, mercenary_unit
 formation        1, 1, 2, 2, 5, square, phalanx
 stat_health      1, 0
 stat_pri         9, 4, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -2634,7 +2634,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 540, 210, 60, 90, 540
-ownership        carthage
+ownership        carthage, slave
 ethnicity carthage, Africa, don't_allow_regional
  
  
@@ -2995,7 +2995,7 @@ voice_indexes    0 1 2
 soldier          numidian_camel_rider, 27, 0, 1
 mount            camel
 mount_effect     elephant -8, horse +2
-attributes       sea_faring, hide_forest, hardy
+attributes       sea_faring, hide_forest, hardy, mercenary_unit
 formation        3, 4, 5, 5, 4, square
 stat_health      1, 0
 stat_pri         8, 6, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -3011,7 +3011,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 520, 140, 60, 80, 520
-ownership        numidia
+ownership        numidia, slave
 ethnicity numidia, Numidia
  
  
@@ -3538,7 +3538,7 @@ voice_indexes    0 1 2
 soldier          east_heavy_cataphract, 27, 0, 1
 mount            horse cataphract
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, hide_forest
+attributes       sea_faring, hide_forest, mercenary_unit
 formation        1.2, 4, 2.4, 6, 3, square, wedge
 stat_health      1, 0
 stat_pri         7, 9, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -3554,7 +3554,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 940, 190, 100, 150, 940
-ownership        parthia, armenia, seleucid
+ownership        parthia, armenia, seleucid, slave
 ethnicity armenia, Armenia
 ethnicity parthia, Elymais
 ethnicity seleucid, Syria
@@ -3598,7 +3598,7 @@ voice_indexes    0 1 2
 soldier          east_cataphract_archer, 27, 0, 1
 mount            heavy horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, hide_forest, cantabrian_circle
+attributes       sea_faring, hide_forest, cantabrian_circle, mercenary_unit
 formation        1.5, 4, 3, 6, 4, square
 stat_health      1, 0
 stat_pri         7, 3, arrow, 170, 30, missile, archery, piercing, none, 25 ,1
@@ -3614,7 +3614,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 790, 140, 80, 120, 790
-ownership        parthia
+ownership        parthia, slave
 ethnicity parthia, Elymais, don't_allow_regional
  
  
@@ -3627,7 +3627,7 @@ voice_indexes    0 1 2
 soldier          east_cataphract_archer, 27, 0, 1
 mount            horse cataphract
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, hide_forest, cantabrian_circle
+attributes       sea_faring, hide_forest, cantabrian_circle, mercenary_unit
 formation        1.5, 4, 3, 6, 4, square
 stat_health      1, 0
 stat_pri         7, 3, arrow, 170, 30, missile, archery, piercing, none, 25 ,1
@@ -3643,7 +3643,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 1230, 190, 130, 190, 1230
-ownership        armenia
+ownership        armenia, slave
 ethnicity armenia, Armenia
  
  
@@ -3686,7 +3686,7 @@ voice_indexes    0 1 2
 soldier          east_heavy_cataphract, 27, 0, 1
 mount            camel cataphract
 mount_effect     elephant -8, horse +2
-attributes       sea_faring, hide_forest
+attributes       sea_faring, hide_forest, mercenary_unit
 formation        3, 4, 5, 5, 3, square, wedge
 stat_health      1, 0
 stat_pri         7, 9, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -3702,7 +3702,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 940, 140, 100, 150, 940
-ownership        parthia
+ownership        parthia, slave
 ethnicity parthia, Elymais
  
  
@@ -4654,7 +4654,7 @@ class            spearmen
 voice_type       Medium_1
 voice_indexes    0 1 2
 soldier          greek_hoplite_spartan_pylos, 40, 0, 1.3
-attributes       sea_faring, hide_forest, can_sap, very_hardy
+attributes       sea_faring, hide_forest, can_sap, very_hardy, mercenary_unit
 formation        1, 1, 2, 2, 5, square, phalanx
 stat_health      2, 0
 stat_pri         16, 4, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -4670,7 +4670,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 1190, 460, 120, 180, 1190
-ownership        greek_cities
+ownership        greek_cities, slave
 ethnicity greek_cities, Laconia, don't_allow_regional
  
  
@@ -4681,7 +4681,7 @@ class            spearmen
 voice_type       Light_1
 voice_indexes    0 1 2
 soldier          greek_levy_pikeman, 60, 0, 1
-attributes       sea_faring, hide_forest, can_sap
+attributes       sea_faring, hide_forest, can_sap, mercenary_unit
 formation        1, 1, 2, 2, 8, square, phalanx
 stat_health      1, 0
 stat_pri         6, 2, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -4697,7 +4697,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 310, 150, 40, 50, 310
-ownership        macedon, seleucid
+ownership        macedon, seleucid, slave
 ethnicity macedon, Macedonia
 ethnicity seleucid, Syria
  
@@ -4709,7 +4709,7 @@ class            spearmen
 voice_type       Medium_1
 voice_indexes    0 1 2
 soldier          greek_pike_phalanx, 60, 0, 1
-attributes       sea_faring, hide_forest, can_sap
+attributes       sea_faring, hide_forest, can_sap, mercenary_unit
 formation        1, 1, 2, 2, 8, square, phalanx
 stat_health      1, 0
 stat_pri         8, 3, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -4725,7 +4725,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 580, 250, 60, 90, 580
-ownership        macedon, seleucid, thrace
+ownership        macedon, seleucid, thrace, slave
 ethnicity macedon, Macedonia
 ethnicity seleucid, Syria
 ethnicity thrace, Thrace
@@ -5536,7 +5536,7 @@ class            light
 voice_type       Light_1
 voice_indexes    0 1 2
 soldier          roman_hastati, 40, 0, 1
-attributes       sea_faring, hide_forest, can_sap
+attributes       sea_faring, hide_forest, can_sap, mercenary_unit
 formation        1, 2, 2, 3, 4, square
 stat_health      1, 0
 stat_pri         11, 2, pilum, 35, 2, thrown, blade, piercing, spear, 25 ,1
@@ -5552,7 +5552,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 440, 170, 50, 70, 440
-ownership        roman
+ownership        roman, slave
 ethnicity romans_brutii, Bruttium
 ethnicity romans_julii, Etruria
 ethnicity romans_scipii, Campania
@@ -5567,7 +5567,7 @@ voice_type       Heavy_1
 voice_indexes    0 1 2
 soldier          roman_principes, 40, 0, 1.3
 officer          roman_early_standard
-attributes       sea_faring, hide_forest, can_sap
+attributes       sea_faring, hide_forest, can_sap, mercenary_unit
 formation        1, 2, 2, 3, 4, square
 stat_health      1, 0
 stat_pri         11, 2, pilum, 35, 2, thrown, blade, piercing, spear, 25 ,1
@@ -5583,7 +5583,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 490, 170, 50, 80, 490
-ownership        romans_julii,romans_brutii,romans_scipii,romans_senate
+ownership        romans_julii,romans_brutii,romans_scipii,romans_senate, slave
 ethnicity romans_brutii, Bruttium
 ethnicity romans_julii, Etruria
 ethnicity romans_scipii, Campania
@@ -5787,7 +5787,7 @@ voice_type       Heavy_1
 voice_indexes    0 1 2
 soldier          roman_praetorian_cohort_i, 40, 0, 1.3
 officer          roman_centurion
-attributes       sea_faring, hide_forest, can_sap
+attributes       sea_faring, hide_forest, can_sap, mercenary_unit
 formation        1, 2, 2, 3, 4, square, testudo
 stat_health      1, 0
 stat_pri         16, 3, pilum, 35, 2, thrown, blade, piercing, spear, 25 ,1
@@ -5803,7 +5803,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 810, 320, 90, 130, 810
-ownership        romans_julii,romans_brutii,romans_scipii,romans_senate
+ownership        romans_julii,romans_brutii,romans_scipii,romans_senate, slave
 ethnicity romans_brutii, Bruttium
 ethnicity romans_julii, Etruria
 ethnicity romans_scipii, Campania
