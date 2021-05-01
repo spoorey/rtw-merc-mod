@@ -6,8 +6,10 @@
 	"Supports BI": false,
 	"Supports Rome": true,
 	"Tags": [
-		"UI"
+		"Campaign",
+		"Units",
+		"Battle"
 	],
-	"Visibility": 0,
+	"Visibility": 2,
 	"Workshop ID": 2472530253
 }
