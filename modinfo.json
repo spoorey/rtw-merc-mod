@@ -1,14 +1,14 @@
 {
-	"Description": "This mod adds some of the core units of each faction as mercenaries to the campaign map. With this mod, you can recruit hastati mercenaries from italy, chariots from egypt, head hurlers from britain, and many more.",
+	"Description": "This mod adds a total of 24 of the core units of each faction as mercenaries to the campaign map. With this mod, you can recruit hastati mercenaries from italy, pikemen from macedon, head hurlers from britain, and many more.\n\nThis mod only affects campaigns started *after* the mod is installed. However, installing it does not break savegames.\n\nThis mod adds no new units. The \"new\" mercenaries are all units which are already available to recruitment to certain factions.\nRecruitment cost for mercenaries is usually double the recruitment cost of the same unit when recruited the normal way from a city.\n\nThe available mercenaries are, in order of replenishment speed (how fast a new mercenary unit becomes available for hire):\nCommon (replenishes about as fast as barbarian mercenaries):\n- Falxmen\n- Desert infantry\n\nMedium (replenishes about as fast as libyan cavalry):\n- hastati\n\nRare (replenishes about as fast as cretan archers):\n- Cataphract archers\n- Naked fanatics\n- Light chariots\n- Head hurlers\n- Forester warband\n- Chosen swordsmen\n- Iberian infantry\n- Principes\n- Levy pikes\n- persian cavalry\n- poeni infantry\n- numidian camel riders\n- night raiders\n\nVery rare (no comparable unit in stock game):\n- Spartan hoplites\n- Cataphracts\n- Scythian noble women\n- Phalanx pikes\n- Cataphract camels\n\nUnique (replenishes about as fast as mercenary war elephants):\n- Spartan hoplites\n- Praetorian cohort\n- Berserkers\n\nThis is my first mod and any feedback is appreciated :)",
 	"Mod Name": "Auxilia-like mercenaries",
 	"Preview Image": "previewimage.png",
 	"Supports Alex": false,
 	"Supports BI": false,
 	"Supports Rome": true,
 	"Tags": [
+		"Battle",
 		"Campaign",
-		"Units",
-		"Battle"
+		"Units"
 	],
 	"Visibility": 2,
 	"Workshop ID": 2472530253
