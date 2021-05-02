@@ -97,9 +97,9 @@ pool Northern_Greece
 pool Northern_Italy
 	regions Etruria Umbria Latium				
 	unit merc samnite,			exp 0 cost 750 replenish 0.03 - 0.05 max 1 initial 0
-	unit roman hastati,			exp 0 cost 880 replenish 0.1 - 0.15 max 2 initial 0
-	unit roman princeps,			exp 0 cost 980 replenish 0.05 - 0.1 max 1 initial 0
-	unit roman praetorian cohort i,			exp 0 cost 1600 replenish 0.005 - 0.15 max 1 initial 0
+	unit merc hastati,			exp 0 cost 880 replenish 0.1 - 0.15 max 2 initial 1
+	unit merc princeps,			exp 0 cost 980 replenish 0.05 - 0.1 max 1 initial 1
+	unit merc praetorian cohort i,			exp 0 cost 1600 replenish 0.005 - 0.15 max 1 initial 1
 
 pool Persia
 	regions Media Elymais				
@@ -128,9 +128,9 @@ pool Southern_Italy
 	regions Apulia Campania Bruttium			
 	unit merc samnite,			exp 1 cost 750 replenish 0.1 - 0.15 max 2 initial 1
 	unit merc greek hoplites,			exp 0 cost 850 replenish 0.05 - 0.08 max 1 initial 0
-	unit roman hastati,			exp 0 cost 880 replenish 0.1 - 0.15 max 2 initial 1
-	unit roman princeps,			exp 0 cost 980 replenish 0.05 - 0.1 max 1 initial 0
-	unit roman praetorian cohort i,			exp 0 cost 1600 replenish 0.005 - 0.15 max 1 initial 0
+	unit merc hastati,			exp 0 cost 880 replenish 0.1 - 0.15 max 2 initial 1
+	unit merc princeps,			exp 0 cost 980 replenish 0.05 - 0.1 max 1 initial 1
+	unit merc praetorian cohort i,			exp 0 cost 1600 replenish 0.005 - 0.15 max 1 initial 1
 
 pool Syria
 	regions Assyria Syria Babylonia Coele_Syria Phoenicia Judaea							
