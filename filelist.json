@@ -1,11 +1,11 @@
 [
 	{
 		"filename": "data\/export_descr_unit.txt",
-		"checksum": 114986948
+		"checksum": 2644790716
 	},
 	{
 		"filename": "data\/feral_export_descr_unit.txt",
-		"checksum": 669343602
+		"checksum": 3890324292
 	},
 	{
 		"filename": "data\/ui\/unit_info\/merc\/barb_berserker_german_info.tga",
@@ -165,6 +165,10 @@
 	},
 	{
 		"filename": "data\/ui\/unit_info_classic\/merc\/numidian_camel_riders_info.tga",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/ui\/unit_info_classic\/merc\/numidian_desert_warriors_info.tga",
 		"checksum": "Blacklisted"
 	},
 	{
@@ -389,7 +393,7 @@
 	},
 	{
 		"filename": "data\/world\/maps\/campaign\/imperial_campaign\/descr_mercenaries.txt",
-		"checksum": 533614602
+		"checksum": 3862892313
 	},
 	{
 		"filename": "previewimage.png",
