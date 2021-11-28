@@ -1,11 +1,19 @@
 [
 	{
-		"filename": "data\/export_descr_unit.txt",
-		"checksum": 3000558496
+		"filename": "data\/export_descr_unit - kopie.txt",
+		"checksum": 2151351998
 	},
 	{
-		"filename": "data\/feral_export_descr_unit.txt",
-		"checksum": 3890324292
+		"filename": "data\/export_descr_unit-original.txt",
+		"checksum": 4038613905
+	},
+	{
+		"filename": "data\/export_descr_unit-steam.txt",
+		"checksum": 1793147625
+	},
+	{
+		"filename": "data\/export_descr_unit.txt",
+		"checksum": 3442745541
 	},
 	{
 		"filename": "data\/ui\/unit_info\/merc\/barb_berserker_german_info.tga",
@@ -392,15 +400,19 @@
 		"checksum": "Blacklisted"
 	},
 	{
+		"filename": "data\/world\/maps\/campaign\/imperial_campaign\/descr_mercenaries - kopie.txt",
+		"checksum": 3395351743
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/imperial_campaign\/descr_mercenaries-original.txt",
+		"checksum": 131123053
+	},
+	{
+		"filename": "data\/world\/maps\/campaign\/imperial_campaign\/descr_mercenaries-steam.txt",
+		"checksum": 104791249
+	},
+	{
 		"filename": "data\/world\/maps\/campaign\/imperial_campaign\/descr_mercenaries.txt",
 		"checksum": 761542102
-	},
-	{
-		"filename": "previewimage.png",
-		"checksum": "Blacklisted"
-	},
-	{
-		"filename": "previewimage.xcf",
-		"checksum": 3635043333
 	}
 ]

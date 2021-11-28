@@ -2139,7 +2139,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 660, 130, 70, 100, 660
-ownership        scythia
+ownership        scythia, slave
 ethnicity scythia, Scythia, don't_allow_mixed, don't_allow_regional, don't_allow_custom
 tattoo_color black
 is_female
@@ -2938,7 +2938,7 @@ class            spearmen
 voice_type       Medium_1
 voice_indexes    0 1 2
 soldier          desert_infantry, 40, 0, 1
-attributes       sea_faring, hide_forest, can_sap, hardy
+attributes       sea_faring, hide_forest, can_sap, hardy, mercenary_unit
 formation        1.2, 1.2, 2.4, 2.4, 4, square
 stat_health      1, 0
 stat_pri         7, 3, no, 0, 0, melee, simple, piercing, spear, 25 ,0.73
@@ -2954,7 +2954,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 390, 200, 40, 60, 390
-ownership        numidia
+ownership        numidia, slave
 ethnicity numidia, Numidia
  
  
