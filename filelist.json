@@ -1,19 +1,23 @@
 [
 	{
-		"filename": "data\/export_descr_unit - kopie.txt",
-		"checksum": 2151351998
+		"filename": "data\/animals\/textures\/mount_camel_cataphract_base_default.tga.dds",
+		"checksum": "Blacklisted"
 	},
 	{
-		"filename": "data\/export_descr_unit-original.txt",
-		"checksum": 4038613905
+		"filename": "data\/animals\/textures\/mount_camel_cataphract_base_default_c.tga.dds",
+		"checksum": "Blacklisted"
 	},
 	{
-		"filename": "data\/export_descr_unit-steam.txt",
-		"checksum": 1793147625
+		"filename": "data\/animals\/textures\/mount_camel_cataphract_base_egypt.tga.dds",
+		"checksum": "Blacklisted"
+	},
+	{
+		"filename": "data\/animals\/textures\/mount_camel_cataphract_base_egypt_c.tga.dds",
+		"checksum": "Blacklisted"
 	},
 	{
 		"filename": "data\/export_descr_unit.txt",
-		"checksum": 3442745541
+		"checksum": 3374593512
 	},
 	{
 		"filename": "data\/ui\/unit_info\/merc\/barb_berserker_german_info.tga",
@@ -400,19 +404,7 @@
 		"checksum": "Blacklisted"
 	},
 	{
-		"filename": "data\/world\/maps\/campaign\/imperial_campaign\/descr_mercenaries - kopie.txt",
-		"checksum": 3395351743
-	},
-	{
-		"filename": "data\/world\/maps\/campaign\/imperial_campaign\/descr_mercenaries-original.txt",
-		"checksum": 131123053
-	},
-	{
-		"filename": "data\/world\/maps\/campaign\/imperial_campaign\/descr_mercenaries-steam.txt",
-		"checksum": 104791249
-	},
-	{
 		"filename": "data\/world\/maps\/campaign\/imperial_campaign\/descr_mercenaries.txt",
-		"checksum": 761542102
+		"checksum": 597214890
 	}
 ]
