@@ -84,7 +84,8 @@
 ;                   armour factor
 ;                   defensive skill factor (not used when shot at)
 ;                   shield factor (only used for attacks from the front of left)
-;                   sound type when hit = flesh, leather, or metal
+;                   sound type when hit = flesh, leather, wood, or metal
+;					Sound type when shield hit = flesh, leather, wood, or metal (optional)
 ;
 ; stat_sec_armour   Details of animal's or vehicle's defenses (note riden horses do not have a separate defence)
 ;                   As per stat_pri_armour, except that the shield entry is ommited
@@ -107,6 +108,9 @@
 ;                   Cost of upgrading weapons
 ;                   Cost of upgrading armour
 ;                   Cost for custom battles
+;
+; recruit_priority_offset	% modifier for AI recruitment priority (optional)
+;
 ; stat_ownership    List of factions and cultures that may have this unit
 ; ethnicity <faction> <home_region> <hair_color> <tattoo_color> (opt)<don't_allow_mixed> (opt)<don't_allow_regional> (opt)<don't_allow_custom>
 
@@ -119,6 +123,7 @@
 ; JNF 2021-05-27 - FEDU and EDU have been reunited together into just EDU, now to define a remastered unit you just need to have a partial definition:
 ;                  add a line for "rebalance_statblock" after the unit you want to edit, then redefine everything between "soldier" and "stat_cost"
 ;                  (minus "officer", "mount", "ship", "engine", or "animal") and the game will automatically duplicate the other properties.
+; JNF 2021-10-06 - Replaced all instances of general_unit_upgrade with general_unit_upgrade "marian_reforms", so we can specify multiple general unit upgrades
 
 type             barb peasant briton
 dictionary       barb_peasant_briton      ; Barbarian Peasants
@@ -1851,6 +1856,7 @@ ownership        britons, slave
 ethnicity britons, Brittania_Superior
 rebalance_statblock
 soldier          barb_chariot_archer, 18, 9, 1
+mount            barbarian heavy chariot reduced hitbox
 mount_effect     elephant -8, camel -4
 attributes       sea_faring, hide_forest,  frighten_foot, cantabrian_circle, mercenary_unit
 formation        8.5, 9, 15, 15, 2, square
@@ -1899,6 +1905,7 @@ ownership        britons
 ethnicity britons, Brittania_Superior
 rebalance_statblock
 soldier          barb_crew_heavy, 18, 9, 1
+mount            barbarian heavy chariot reduced hitbox
 mount_effect     elephant -8, camel -4
 attributes       sea_faring, hide_forest,  frighten_foot
 formation        7, 9, 15, 15, 2, square
@@ -1947,6 +1954,7 @@ ownership        slave
 ethnicity slave, Brittania_Superior, don't_allow_regional
 rebalance_statblock
 soldier          barb_crew_heavy, 18, 9, 1
+mount            barbarian heavy chariot reduced hitbox
 mount_effect     elephant -8, camel -4
 attributes       sea_faring, hide_forest,  frighten_foot
 formation        7, 9, 15, 15, 2, square
@@ -2383,7 +2391,7 @@ voice_indexes    0 1 2
 soldier          barb_gothic_cavalry, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         12, 7, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -2412,7 +2420,7 @@ voice_indexes    0 1 2
 soldier          barb_gothic_cavalry, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         12, 7, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -2441,7 +2449,7 @@ voice_indexes    0 1 2
 soldier          barb_gothic_cavalry, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         12, 7, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -2488,7 +2496,27 @@ stat_food        60, 300
 stat_cost        1, 1010, 140, 110, 160, 1010
 ownership        britons
 ethnicity britons, Brittania_Superior
- 
+rebalance_statblock
+soldier          barb_crew_heavy, 18, 9, 1
+mount            barbarian heavy chariot reduced hitbox
+mount_effect     elephant -8, camel -4
+attributes       sea_faring,  frighten_foot, general_unit, hardy
+formation        7, 9, 15, 15, 2, square
+stat_health      2, 5
+stat_pri         13, 4, no, 0, 0, melee, simple, piercing, sword, 25 ,1
+stat_pri_attr    no
+stat_sec         13, 7, no, 0, 0, melee, blade, slashing, none, 25 ,1
+stat_sec_attr    launching, ap
+stat_pri_armour  6, 5, 0, metal
+stat_sec_armour  0, 1, flesh
+stat_heat        2
+stat_ground      0, -2, -4, 2
+stat_mental      12, normal, untrained
+stat_charge_dist 40
+stat_fire_delay  0
+stat_food        60, 300
+stat_cost        1, 1010, 140, 110, 160, 1010
+
  
 type             barb scythian general scythian
 dictionary       barb_scythian_chieftain_cavalry_scythian      ; Barbarian Chosen Warlord
@@ -2499,7 +2527,7 @@ voice_indexes    0 1 2
 soldier          barb_scythian_lancer, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         11, 10, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -2945,7 +2973,7 @@ stat_pri         7, 3, no, 0, 0, melee, simple, piercing, spear, 25 ,0.73
 stat_pri_attr    spear, spear_bonus_8
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  3, 5, 5, leather
+stat_pri_armour  3, 5, 5, leather, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -1
 stat_ground      2, 2, -2, -2
@@ -3105,7 +3133,7 @@ voice_indexes    0 1 2
 soldier          carthaginian_royal_cavalry, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         11, 6, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -3201,7 +3229,7 @@ stat_pri         8, 6, no, 0, 0, melee, simple, piercing, spear, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  3, 6, 4, leather
+stat_pri_armour  3, 6, 4, leather, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -2
 stat_ground      0, 2,-6,-2
@@ -3478,7 +3506,7 @@ stat_pri         4, 1, stone, 80, 40, missile, archery, blunt, none, 25 ,1
 stat_pri_attr    no
 stat_sec         3, 1, no, 0, 0, melee, simple, piercing, knife, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  0, 2, 2, flesh
+stat_pri_armour  0, 2, 2, flesh, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -1
 stat_ground      2, 1, 0, -1
@@ -3534,7 +3562,7 @@ stat_pri         5, 2, no, 0, 0, melee, simple, piercing, spear, 25 ,0.73
 stat_pri_attr    spear, spear_bonus_8
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  3, 4, 2, leather
+stat_pri_armour  3, 4, 2, leather, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -1
 stat_ground      2, 1, 0, -1
@@ -3563,7 +3591,7 @@ stat_pri         3, 1, no, 0, 0, melee, simple, piercing, spear, 25 ,0.73
 stat_pri_attr    spear, spear_bonus_8
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  3, 2, 5, leather
+stat_pri_armour  3, 2, 5, leather, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        0
 stat_ground      2, 1, 0, -1
@@ -4054,7 +4082,27 @@ stat_food        60, 300
 stat_cost        2, 920, 210, 100, 140, 920
 ownership        pontus
 ethnicity pontus, Pontus
- 
+rebalance_statblock
+soldier          east_scythed_chariot_crew, 9, 9, 1
+mount            scythed chariot reduced hitbox
+mount_effect     elephant -8, camel -4
+attributes       sea_faring, hide_forest,  frighten_foot, can_run_amok
+formation        7, 9, 15, 15, 1, square
+stat_health      1, 4
+stat_pri         9, 3, no, 0, 0, melee, simple, piercing, knife, 25 ,1
+stat_pri_attr    no
+stat_sec         15, 7, no, 0, 0, melee, blade, slashing, none, 25 ,1
+stat_sec_attr    ap, launching
+stat_pri_armour  18, 1, 0, metal
+stat_sec_armour  0, 1, flesh
+stat_heat        3
+stat_ground      0, 1, -6, -1
+stat_mental      10, impetuous, untrained
+stat_charge_dist 40
+stat_fire_delay  0
+stat_food        60, 300
+stat_cost        2, 920, 210, 100, 140, 920
+
  
 type             east chariot archer
 dictionary       east_chariot_archer      ; Chariot Archers
@@ -4085,6 +4133,7 @@ ownership        pontus
 ethnicity pontus, Pontus
 rebalance_statblock
 soldier          east_chariot_archer, 27, 9, 1
+mount            heavy chariot reduced hitbox
 mount_effect     elephant -8, camel -4
 attributes       sea_faring, hide_forest,  frighten_foot, cantabrian_circle
 formation        8.5, 9, 15, 15, 2, square
@@ -4144,7 +4193,7 @@ voice_indexes    0 1 2
 soldier          east_heavy_cataphract, 12, 0, 1
 mount            horse cataphract
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.2, 4, 2.4, 6, 3, square
 stat_health      2, 0
 stat_pri         10, 9, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -4174,7 +4223,7 @@ voice_indexes    0 1 2
 soldier          east_cappodocian_cavalry, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         10, 9, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -4194,7 +4243,7 @@ ownership        pontus
 rebalance_statblock
 soldier          east_cappodocian_cavalry, 12, 0, 1
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         10, 9, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -4284,7 +4333,7 @@ stat_pri         6, 1, javelin, 50, 6, thrown, archery, piercing, spear, 25 ,1
 stat_pri_attr    thrown
 stat_sec         3, 1, no, 0, 0, melee, simple, piercing, knife, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  0, 2, 2, flesh
+stat_pri_armour  0, 2, 2, flesh, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -2
 stat_ground      2, 2, -2, -2
@@ -4305,7 +4354,7 @@ stat_pri         6, 1, javelin, 65, 6, thrown, archery, piercing, spear, 25 ,0.7
 stat_pri_attr    thrown
 stat_sec         3, 1, no, 0, 0, melee, simple, piercing, knife, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  0, 2, 2, flesh
+stat_pri_armour  0, 2, 2, flesh, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -2
 stat_ground      2, 2, -2, -2
@@ -4330,7 +4379,7 @@ stat_pri         4, 1, stone, 80, 40, missile, archery, blunt, none, 25 ,1
 stat_pri_attr    no
 stat_sec         3, 1, no, 0, 0, melee, simple, piercing, knife, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  0, 2, 2, flesh
+stat_pri_armour  0, 2, 2, flesh, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -2
 stat_ground      2, 2, -2, -2
@@ -4430,7 +4479,7 @@ stat_pri         5, 2, no, 0, 0, melee, simple, piercing, spear, 25 ,1
 stat_pri_attr    spear, spear_bonus_8
 stat_sec         2, 1, no, 0, 0, melee, simple, piercing, knife, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  0, 3, 5, flesh
+stat_pri_armour  0, 3, 5, flesh, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -1
 stat_ground      2, 2, -2, -2
@@ -4450,7 +4499,7 @@ stat_pri         5, 2, no, 0, 0, melee, simple, piercing, spear, 25 ,0.75
 stat_pri_attr    spear, spear_bonus_8
 stat_sec         2, 1, no, 0, 0, melee, simple, piercing, knife, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  0, 3, 5, flesh
+stat_pri_armour  0, 3, 5, flesh, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -1
 stat_ground      2, 2, -2, -2
@@ -4503,7 +4552,7 @@ stat_pri         10, 4, no, 0, 0, melee, blade, piercing, axe, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  3, 5, 2, leather
+stat_pri_armour  3, 5, 2, leather, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -2
 stat_ground      2, 2, -2, -2
@@ -4523,7 +4572,7 @@ stat_pri         10, 4, no, 0, 0, melee, blade, piercing, axe, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  3, 5, 2, leather
+stat_pri_armour  3, 5, 2, leather, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -2
 stat_ground      2, 2, -2, -2
@@ -4725,6 +4774,7 @@ ownership        egypt, slave
 ethnicity egypt, Nile_Delta
 rebalance_statblock
 soldier          egyptian_chariot_crew, 27, 9, 1
+mount            egyptian chariot reduced hitbox
 mount_effect     elephant -8, camel -4
 attributes       sea_faring, hide_forest,  frighten_foot
 formation        7, 9, 15, 15, 2, square
@@ -4773,6 +4823,7 @@ ownership        egypt
 ethnicity egypt, Nile_Delta
 rebalance_statblock
 soldier          egyptian_chariot_archer, 27, 9, 1
+mount            egyptian chariot reduced hitbox
 mount_effect     elephant -8, camel -4
 attributes       sea_faring, hide_forest,  frighten_foot, cantabrian_circle
 formation        8.5, 9, 15, 15, 2, square
@@ -4877,6 +4928,7 @@ ownership        egypt, slave
 ethnicity egypt, Nile_Delta
 rebalance_statblock
 soldier          egyptian_chariot_archer, 12, 6, 0.8
+mount            egyptian chariot reduced hitbox
 mount_effect     elephant -8, camel -4
 attributes       sea_faring,  frighten_foot, general_unit, hardy
 formation        7, 9, 15, 15, 2, square
@@ -4905,7 +4957,7 @@ voice_indexes    0 1 2
 soldier          egyptian_cleruch, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         11, 6, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -5569,7 +5621,7 @@ voice_indexes    0 1 2
 soldier          greek_heavy_cavalry, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         10, 9, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -5629,7 +5681,7 @@ voice_indexes    0 1 2
 soldier          barb_gothic_cavalry, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         11, 6, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -5880,6 +5932,7 @@ ownership        seleucid
 ethnicity seleucid, Syria
 rebalance_statblock
 soldier          east_scythed_chariot_crew, 9, 9, 1
+mount            scythed chariot reduced hitbox
 mount_effect     elephant -8, camel -4
 attributes       sea_faring, hide_forest,  frighten_foot, can_run_amok
 formation        7, 9, 15, 15, 1, square
@@ -6920,7 +6973,7 @@ voice_indexes    0 1 2
 soldier          roman_praetorian_cavalry, 12, 0, 1
 mount            generals horse
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade
+attributes       sea_faring, general_unit, hide_forest, hardy, general_unit_upgrade "marian_reforms"
 formation        1.5, 4, 3, 6, 3, square
 stat_health      2, 0
 stat_pri         11, 6, no, 0, 0, melee, simple, piercing, spear, 25 ,1
@@ -7212,7 +7265,27 @@ stat_cost        1, 780, 140, 80, 120, 780
 ownership        slave
 ethnicity slave, Aetolia, don't_allow_regional
 is_female
- 
+rebalance_statblock
+soldier          greek_amazons, 27, 9, 1
+mount            heavy chariot reduced hitbox
+mount_effect     elephant -8, camel -4
+attributes       sea_faring, hide_forest,  frighten_foot, cantabrian_circle
+formation        8.5, 9, 15, 15, 2, square
+stat_health      1, 2
+stat_pri         10, 4, arrow, 120, 60, missile, archery, piercing, none, 25 ,1
+stat_pri_attr    no
+stat_sec         10, 6, no, 0, 0, melee, blade, slashing, none, 25 ,1
+stat_sec_attr    launching, ap
+stat_pri_armour  11, 1, 0, metal
+stat_sec_armour  0, 1, flesh
+stat_heat        2
+stat_ground      0, 0, -6, 0
+stat_mental      12, normal, untrained
+stat_charge_dist 40
+stat_fire_delay  0
+stat_food        60, 300
+stat_cost        1, 780, 140, 80, 120, 780
+
  
 type             rebel judaean zealots
 dictionary       judean_zealots      ; Judean Zealots
@@ -7733,7 +7806,7 @@ stat_pri         7, 4, no, 0, 0, melee, simple, piercing, sword, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  3, 4, 4, leather
+stat_pri_armour  3, 4, 4, leather, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -2
 stat_ground      0, 2,-6,-2
@@ -7764,7 +7837,7 @@ stat_pri         7, 4, no, 0, 0, melee, simple, piercing, sword, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
 stat_sec_attr    no
-stat_pri_armour  3, 4, 4, leather
+stat_pri_armour  3, 4, 4, leather, wood
 stat_sec_armour  0, 0, flesh
 stat_heat        -2
 stat_ground      0, 2,-6,-2
