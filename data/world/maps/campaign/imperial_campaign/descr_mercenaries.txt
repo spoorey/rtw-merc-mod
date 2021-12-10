@@ -143,7 +143,6 @@ pool Syria
 	unit east cataphract archer,				exp 0 cost 2500 replenish 0.05 - 0.1 max 2 initial 0
 	unit east persian cavalry,			exp 0 cost 1500 replenish 0.05 - 0.1 max 2 initial 0
 	unit east heavy cataphract,			exp 0 cost 1900 replenish 0.015 - 0.03 max 2 initial 0
-	unit east camel cataphract,			exp 0 cost 1880 replenish 0.015 - 0.03 max 2 initial 0
 
 pool Cilicia
 	regions Cilicia Cyprus				
