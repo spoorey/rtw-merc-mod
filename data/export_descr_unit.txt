@@ -3839,7 +3839,7 @@ voice_indexes    0 1 2
 soldier          east_heavy_cataphract, 27, 0, 1
 mount            horse cataphract
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, hide_forest, mercenary_unit
+attributes       sea_faring, hide_forest
 formation        1.2, 4, 2.4, 6, 3, square, wedge
 stat_health      1, 0
 stat_pri         7, 9, no, 0, 0, melee, blade, piercing, spear, 25 ,1
@@ -3855,7 +3855,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 940, 190, 100, 150, 940
-ownership        parthia, armenia, seleucid, slave
+ownership        parthia, armenia, seleucid
 ethnicity armenia, Armenia
 ethnicity parthia, Elymais
 ethnicity seleucid, Syria
@@ -3947,7 +3947,7 @@ voice_indexes    0 1 2
 soldier          east_cataphract_archer, 27, 0, 1
 mount            horse cataphract
 mount_effect     elephant -8, camel -4
-attributes       sea_faring, hide_forest, cantabrian_circle, mercenary_unit
+attributes       sea_faring, hide_forest, cantabrian_circle
 formation        1.5, 4, 3, 6, 4, square
 stat_health      1, 0
 stat_pri         7, 3, arrow, 170, 30, missile, archery, piercing, none, 25 ,1
@@ -3963,7 +3963,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 1230, 190, 130, 190, 1230
-ownership        armenia, slave
+ownership        armenia
 ethnicity armenia, Armenia
  
  
